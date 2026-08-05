@@ -1,0 +1,11 @@
+TORNEO U12 2026 - PAGINE DI CONSULTAZIONE
+
+Aprire index.html in un browser.
+
+File inclusi:
+- index.html: home e appuntamenti del 19 agosto
+- calendario.html: calendario per giornata, filtri e inserimento risultati
+- classifiche.html: classifiche automatiche dei gironi A e B
+- stile.css, data.js, app.js: risorse dell'applicazione
+
+I risultati sono salvati nel localStorage del browser. Le classifiche considerano solo le gare di qualificazione U12 concluse e ignorano punteggi pari/incompleti.
