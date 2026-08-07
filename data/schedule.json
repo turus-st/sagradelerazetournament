@@ -512,8 +512,8 @@
     "time": "09:00-10:10",
     "field": "RONCHI",
     "phase": "3RD-4TH FINAL",
-    "team1": "5th",
-    "team2": "6th",
+    "team1": "3rd",
+    "team2": "4th",
     "group": "F"
   },
   {
@@ -523,8 +523,8 @@
     "time": "10:30-11:40",
     "field": "RONCHI",
     "phase": "1ST-2ND FINAL",
-    "team1": "3rd",
-    "team2": "4th",
+    "team1": "1st",
+    "team2": "2nd",
     "group": "F"
   }
 ]
