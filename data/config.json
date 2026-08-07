@@ -1,0 +1,45 @@
+{
+  "categories": {
+    "U10": {
+      "enabled": true,
+      "groups": {
+        "A": [
+          "DUCKS",
+          "DRAGONS S. GIORGIO",
+          "VIENNA HURRICANES",
+          "TIGERS",
+          "LONDON ARCHERS"
+        ]
+      }
+    },
+    "U12": {
+      "enabled": true,
+      "groups": {
+        "A": [
+          "DUCKS",
+          "ERD INDIANS HUNGARY",
+          "DIVING DUCKS",
+          "LONDON MONARCHS",
+          "RONCHI NBP",
+          "KIEV BASEBALL"
+        ],
+        "B": [
+          "TIGERS",
+          "BEAVERS METROSTARS VIENNA",
+          "LONDON ARCHERS",
+          "FUN & PLAY",
+          "RANGERS REDIPUGLIA",
+          "RADVILISKIS"
+        ]
+      }
+    },
+    "U15": {
+      "enabled": false,
+      "groups": {}
+    },
+    "U18": {
+      "enabled": false,
+      "groups": {}
+    }
+  }
+}
