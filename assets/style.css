@@ -5,12 +5,10 @@
     justify-content: center;
     gap: 12px;
 }
-
 .footer-logo {
     height: 100px;
     width: auto;
 }
-
 .hp-logo{
     display: block;
     width: 95%;
@@ -18,4 +16,13 @@
     height: auto;
     margin: auto;
     text-align: center;
+}
+.col-team {
+    width: 35%;
+}
+.col-num {
+    width: 6%;
+}
+.col-pct {
+    width: 6%;
 }
