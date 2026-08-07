@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "updatedAt": null,
+  "updatedAt": "2026-08-07T05:50:36.005Z",
   "games": {
     "U12:1": {
-      "status": "scheduled",
-      "score1": null,
-      "score2": null,
+      "status": "live",
+      "score1": 2,
+      "score2": 2,
       "pitchers": [],
       "batters": [],
       "mvp": {
@@ -13,7 +13,7 @@
         "team": "",
         "notes": ""
       },
-      "updatedAt": null
+      "updatedAt": "2026-08-07T05:50:36.005Z"
     },
     "U12:2": {
       "status": "scheduled",
