@@ -34,12 +34,42 @@
       }
     },
     "U15": {
-      "enabled": false,
-      "groups": {}
+      "enabled": true,
+      "groups": {
+        "A": [
+          "VIENNA HURRICANES",
+          "A-TEAM",
+          "DUCKS",
+          "SENAGO - SALA SELECTION",
+          "HROSI BRNO"
+        ],
+        "B": [
+          "TIGERS",
+          "ERD GIANTS",
+          "FUN & PLAY",
+          "STUTZPUNKT WEST",
+          "RADVILISKIS"
+        ]
+      }
     },
     "U18": {
-      "enabled": false,
-      "groups": {}
+      "enabled": true,
+      "groups": {
+        "A": [
+          "STARANZANO DUCKS",
+          "HEIDENHEIM BLU",
+          "TIGERS DECEMBREN",
+          "CROCETTA",
+          "SAN LORENZO"
+        ],
+        "B": [
+          "ERDS ANGELS",
+          "CASTENASO",
+          "JUNIOR PARMA",
+          "HEIDENHEIM RED",
+          "TIGERS CERVIGNANO"
+        ]
+      }
     }
   }
 }
