@@ -12,6 +12,10 @@
 }
 
 .hp-logo{
-    width: 100vw;
+    display: block;
+    width: 95%;
+    max-width: 1200px;
     height: auto;
+    margin: auto;
+    text-align: center;
 }
