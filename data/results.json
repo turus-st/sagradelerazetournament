@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-08-07T06:58:36.697Z",
+  "updatedAt": "2026-08-07T07:01:14.342Z",
   "games": {
     "U12:1": {
       "status": "completed",
@@ -481,7 +481,7 @@
         "team": "",
         "notes": ""
       },
-      "updatedAt": "2026-08-07T06:58:36.697Z"
+      "updatedAt": "2026-08-07T07:01:14.342Z"
     },
     "U10:2": {
       "status": "scheduled",
@@ -625,6 +625,760 @@
         "notes": ""
       },
       "updatedAt": null
+    },
+    "U15:1": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U15:2": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U15:3": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U15:4": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U15:5": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U15:6": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U15:7": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U15:8": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U15:9": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U15:10": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U15:11": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U15:12": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U15:13": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U15:14": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U15:15": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U15:16": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U15:17": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U15:18": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U15:19": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U15:20": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U15:21": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U15:22": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U15:23": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U15:24": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U15:25": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U15:26": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U15:27": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U15:28": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U15:29": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U18:1": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U18:2": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U18:3": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U18:4": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U18:5": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U18:6": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U18:7": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U18:8": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U18:9": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U18:10": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U18:11": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U18:12": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U18:13": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U18:14": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U18:15": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U18:16": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U18:17": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U18:18": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U18:19": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U18:20": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U18:21": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U18:22": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U18:23": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U18:24": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U18:25": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U18:26": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U18:27": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U18:28": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
+    },
+    "U18:29": {
+      "status": "scheduled",
+      "score1": null,
+      "score2": null,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": null
     }
   },
   "tqb": {
@@ -644,6 +1398,26 @@
     "U12:B:LONDON ARCHERS": null,
     "U12:B:FUN & PLAY": null,
     "U12:B:RANGERS REDIPUGLIA": null,
-    "U12:B:RADVILISKIS": null
+    "U12:B:RADVILISKIS": null,
+    "U15:A:VIENNA HURRICANES": null,
+    "U15:A:A-TEAM": null,
+    "U15:A:DUCKS": null,
+    "U15:A:SENAGO - SALA SELECTION": null,
+    "U15:A:HROSI BRNO": null,
+    "U15:B:TIGERS": null,
+    "U15:B:ERD GIANTS": null,
+    "U15:B:FUN & PLAY": null,
+    "U15:B:STUTZPUNKT WEST": null,
+    "U15:B:RADVILISKIS": null,
+    "U18:A:STARANZANO DUCKS": null,
+    "U18:A:HEIDENHEIM BLU": null,
+    "U18:A:TIGERS DECEMBREN": null,
+    "U18:A:CROCETTA": null,
+    "U18:A:SAN LORENZO": null,
+    "U18:B:ERDS ANGELS": null,
+    "U18:B:CASTENASO": null,
+    "U18:B:JUNIOR PARMA": null,
+    "U18:B:HEIDENHEIM RED": null,
+    "U18:B:TIGERS CERVIGNANO": null
   }
 }
