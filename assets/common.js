@@ -1,1 +1,408 @@
-const $=id=>document.getElementById(id);const key=g=>`${g.category}:${g.game}`;async function loadData(){const v=Date.now(),get=async p=>{const r=await fetch(p+'?v='+v);if(!r.ok)throw Error('Could not load '+p);return r.json()};const[schedule,results,config]=await Promise.all([get('data/schedule.json'),get('data/results.json'),get('data/config.json')]);return{schedule,results,config}}function esc(x){return String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}function gd(g,r){return Object.assign({status:'scheduled',score1:null,score2:null,pitchers:[],batters:[],mvp:{}},r.games[key(g)]||{})}function badge(s){return `<span class="status ${s}">${{scheduled:'Scheduled',live:'In progress',completed:'Completed'}[s]||s}</span>`}function groupComplete(cat,grp,s,r){const a=s.filter(g=>g.category===cat&&g.group===grp&&g.phase==='QUALIFICATION');return a.length>0&&a.every(g=>gd(g,r).status==='completed')}function table(cat,grp,s,r,c){const teams=c.categories[cat].groups[grp]||[],x={};teams.forEach(t=>x[t]={team:t,g:0,w:0,l:0,rf:0,ra:0,diff:0,pct:0,tqb:r.tqb?.[`${cat}:${grp}:${t}`]??null});const games=s.filter(g=>g.category===cat&&g.group===grp&&g.phase==='QUALIFICATION').map(g=>[g,gd(g,r)]).filter(([,z])=>z.status==='completed'&&Number.isInteger(z.score1)&&Number.isInteger(z.score2);games.forEach(([g,z])=>{let a=x[g.team1],b=x[g.team2];if(!a||!b)return;a.g++;b.g++;a.rf+=z.score1;a.ra+=z.score2;b.rf+=z.score2;b.ra+=z.score1;if(z.score1>z.score2){a.w++;b.l++}else if(z.score1<z.score2){b.w++;a.l++}else{a.t=(a.t||0)+1;b.t=(b.t||0)+1;}});Object.values(x).forEach(z=>{z.diff=z.rf-z.ra;z.pct=z.g?(z.w+(z.t||0)*0.5/z.g:0});const head=(a,b)=>{const g=games.find(([m])=>(m.team1===a.team&&m.team2===b.team)||(m.team1===b.team&&m.team2===a.team));if(!g)return 0;const[m,z]=g,w=z.score1>z.score2?m.team1:m.team2;return w===a.team?-1:1};return Object.values(x).sort((a,b)=>b.pct-a.pct||head(a,b)||((b.tqb??-Infinity)-(a.tqb??-Infinity))||b.diff-a.diff||b.rf-a.rf||a.team.localeCompare(b.team))}function outcome(cat,no,s,r,winner){const g=s.find(x=>x.category===cat&&x.game===String(no)),z=g&&gd(g,r);if(!g||z.status!=='completed'||!Number.isInteger(z.score1)||!Number.isInteger(z.score2)||z.score1===z.score2)return null;const first=z.score1>z.score2;return winner?(first?g.team1:g.team2):(first?g.team2:g.team1)}function effective(s,r,c){const rankMaps={U12:{'31':['A',5,'B',5],'32':['A',4,'B',4],'33':['A',3,'B',3],'34':['A',2,'B',2],'35':['A',1,'B',1],'36':['A',0,'B',0]},U10:{'11':['A',4,'A',5],'12':['A',2,'A',3]},U15:{'21':['A',3,'B',2],'22':['A',2,'B',3],'23':['A',1,'B',0],'24':['A',0,'B',1],'25':['A',4,'B',4]},U18:{'21':['A',3,'B',2],'22':['A',2,'B',3],'23':['A',1,'B',0],'24':['A',0,'B',1],'25':['A',4,'B',4]}};let out=s.map(g=>{const m=rankMaps[g.category]?.[g.game];if(!m)return{...g};const[ga,ia,gb,ib]=m;if(!groupComplete(g.category,ga,s,r)||!groupComplete(g.category,gb,s,r))return{...g};const a=table(g.category,ga,s,r,c),b=table(g.category,gb,s,r,c);return{...g,team1:a[ia]?.team||g.team1,team2:b[ib]?.team||g.team2}});const resultMaps={U15:{'26':[21,0,22,0],'27':[21,1,22,1],'28':[23,0,24,0],'29':[23,1,24,1]},U18:{'26':[21,0,22,0],'27':[21,1,22,1],'28':[23,0,24,0],'29':[23,1,24,1]}};return out.map(g=>{const m=resultMaps[g.category]?.[g.game];if(!m)return g;const[a,aw,b,bw]=m;return{...g,team1:outcome(g.category,a,out,r,!!aw)||g.team1,team2:outcome(g.category,b,out,r,!!bw)||g.team2}})}function pct(n){return n.toFixed(3).replace(/^0/,'')}
+const $ = id => document.getElementById(id);
+const key = g => `${g.category}:${g.game}`;
+
+async function loadData() {
+    const version = Date.now();
+
+    const getJson = async path => {
+        const response = await fetch(path + '?v=' + version);
+
+        if (!response.ok) {
+            throw Error('Could not load ' + path);
+        }
+
+        return response.json();
+    };
+
+    const [schedule, results, config] = await Promise.all([
+        getJson('data/schedule.json'),
+        getJson('data/results.json'),
+        getJson('data/config.json')
+    ]);
+
+    return {
+        schedule,
+        results,
+        config
+    };
+}
+
+function esc(value) {
+    return String(value ?? '').replace(
+        /[&<>"']/g,
+        character => ({
+            '&': '&amp;',
+            '<': '&lt;',
+            '>': '&gt;',
+            '"': '&quot;',
+            "'": '&#39;'
+        })[character]
+    );
+}
+
+function gd(game, results) {
+    return Object.assign(
+        {
+            status: 'scheduled',
+            score1: null,
+            score2: null,
+            pitchers: [],
+            batters: [],
+            mvp: {}
+        },
+        results.games[key(game)] || {}
+    );
+}
+
+function badge(status) {
+    const labels = {
+        scheduled: 'Scheduled',
+        live: 'In progress',
+        completed: 'Completed'
+    };
+
+    return `
+        <span class="status ${status}">
+            ${labels[status] || status}
+        </span>
+    `;
+}
+
+function groupComplete(category, group, schedule, results) {
+    const qualificationGames = schedule.filter(game =>
+        game.category === category &&
+        game.group === group &&
+        game.phase === 'QUALIFICATION'
+    );
+
+    return (
+        qualificationGames.length > 0 &&
+        qualificationGames.every(
+            game => gd(game, results).status === 'completed'
+        )
+    );
+}
+
+function table(category, group, schedule, results, config) {
+    const teams =
+        config.categories[category].groups[group] || [];
+
+    const statistics = {};
+
+    teams.forEach(team => {
+        statistics[team] = {
+            team,
+            g: 0,
+            w: 0,
+            l: 0,
+            t: 0,
+            rf: 0,
+            ra: 0,
+            diff: 0,
+            pct: 0,
+            tqb:
+                results.tqb?.[
+                    `${category}:${group}:${team}`
+                ] ?? null
+        };
+    });
+
+    const completedGames = schedule
+        .filter(game =>
+            game.category === category &&
+            game.group === group &&
+            game.phase === 'QUALIFICATION'
+        )
+        .map(game => [
+            game,
+            gd(game, results)
+        ])
+        .filter(([, result]) =>
+            result.status === 'completed' &&
+            Number.isInteger(result.score1) &&
+            Number.isInteger(result.score2)
+        );
+
+    completedGames.forEach(([game, result]) => {
+        const team1 = statistics[game.team1];
+        const team2 = statistics[game.team2];
+
+        if (!team1 || !team2) {
+            return;
+        }
+
+        team1.g++;
+        team2.g++;
+
+        team1.rf += result.score1;
+        team1.ra += result.score2;
+
+        team2.rf += result.score2;
+        team2.ra += result.score1;
+
+        if (result.score1 > result.score2) {
+            team1.w++;
+            team2.l++;
+        } else if (result.score2 > result.score1) {
+            team2.w++;
+            team1.l++;
+        } else {
+            team1.t++;
+            team2.t++;
+        }
+    });
+
+    Object.values(statistics).forEach(team => {
+        team.diff = team.rf - team.ra;
+
+        team.pct = team.g
+            ? (team.w + team.t * 0.5) / team.g
+            : 0;
+    });
+
+    const headToHead = (teamA, teamB) => {
+        const directGame = completedGames.find(
+            ([game]) =>
+                (
+                    game.team1 === teamA.team &&
+                    game.team2 === teamB.team
+                ) ||
+                (
+                    game.team1 === teamB.team &&
+                    game.team2 === teamA.team
+                )
+        );
+
+        if (!directGame) {
+            return 0;
+        }
+
+        const [game, result] = directGame;
+
+        if (result.score1 === result.score2) {
+            return 0;
+        }
+
+        const winner =
+            result.score1 > result.score2
+                ? game.team1
+                : game.team2;
+
+        return winner === teamA.team ? -1 : 1;
+    };
+
+    return Object.values(statistics).sort(
+        (teamA, teamB) =>
+            teamB.pct - teamA.pct ||
+
+            headToHead(teamA, teamB) ||
+
+            (
+                (teamB.tqb ?? -Infinity) -
+                (teamA.tqb ?? -Infinity)
+            ) ||
+
+            teamB.diff - teamA.diff ||
+
+            teamB.rf - teamA.rf ||
+
+            teamA.team.localeCompare(teamB.team)
+    );
+}
+
+function outcome(
+    category,
+    gameNumber,
+    schedule,
+    results,
+    winnerRequested
+) {
+    const game = schedule.find(
+        item =>
+            item.category === category &&
+            item.game === String(gameNumber)
+    );
+
+    const result =
+        game && gd(game, results);
+
+    if (
+        !game ||
+        result.status !== 'completed' ||
+        !Number.isInteger(result.score1) ||
+        !Number.isInteger(result.score2) ||
+        result.score1 === result.score2
+    ) {
+        return null;
+    }
+
+    const firstTeamWon =
+        result.score1 > result.score2;
+
+    if (winnerRequested) {
+        return firstTeamWon
+            ? game.team1
+            : game.team2;
+    }
+
+    return firstTeamWon
+        ? game.team2
+        : game.team1;
+}
+
+function effective(schedule, results, config) {
+    const rankMaps = {
+        U10: {
+            '11': ['A', 4, 'A', 5],
+            '12': ['A', 2, 'A', 3]
+        },
+
+        U12: {
+            '31': ['A', 5, 'B', 5],
+            '32': ['A', 4, 'B', 4],
+            '33': ['A', 3, 'B', 3],
+            '34': ['A', 2, 'B', 2],
+            '35': ['A', 1, 'B', 1],
+            '36': ['A', 0, 'B', 0]
+        },
+
+        U15: {
+            '21': ['A', 3, 'B', 2],
+            '22': ['A', 2, 'B', 3],
+            '23': ['A', 1, 'B', 0],
+            '24': ['A', 0, 'B', 1],
+            '25': ['A', 4, 'B', 4]
+        },
+
+        U18: {
+            '21': ['A', 3, 'B', 2],
+            '22': ['A', 2, 'B', 3],
+            '23': ['A', 1, 'B', 0],
+            '24': ['A', 0, 'B', 1],
+            '25': ['A', 4, 'B', 4]
+        }
+    };
+
+    const effectiveSchedule =
+        schedule.map(game => {
+            const mapping =
+                rankMaps[game.category]?.[game.game];
+
+            if (!mapping) {
+                return { ...game };
+            }
+
+            const [
+                groupA,
+                indexA,
+                groupB,
+                indexB
+            ] = mapping;
+
+            const groupsAreComplete =
+                groupComplete(
+                    game.category,
+                    groupA,
+                    schedule,
+                    results
+                ) &&
+                groupComplete(
+                    game.category,
+                    groupB,
+                    schedule,
+                    results
+                );
+
+            if (!groupsAreComplete) {
+                return { ...game };
+            }
+
+            const standingsA = table(
+                game.category,
+                groupA,
+                schedule,
+                results,
+                config
+            );
+
+            const standingsB = table(
+                game.category,
+                groupB,
+                schedule,
+                results,
+                config
+            );
+
+            return {
+                ...game,
+
+                team1:
+                    standingsA[indexA]?.team ||
+                    game.team1,
+
+                team2:
+                    standingsB[indexB]?.team ||
+                    game.team2
+            };
+        });
+
+    const resultMaps = {
+        U15: {
+            '26': [21, false, 22, false],
+            '27': [21, true, 22, true],
+            '28': [23, false, 24, false],
+            '29': [23, true, 24, true]
+        },
+
+        U18: {
+            '26': [21, false, 22, false],
+            '27': [21, true, 22, true],
+            '28': [23, false, 24, false],
+            '29': [23, true, 24, true]
+        }
+    };
+
+    return effectiveSchedule.map(game => {
+        const mapping =
+            resultMaps[game.category]?.[game.game];
+
+        if (!mapping) {
+            return game;
+        }
+
+        const [
+            game1,
+            winner1,
+            game2,
+            winner2
+        ] = mapping;
+
+        return {
+            ...game,
+
+            team1:
+                outcome(
+                    game.category,
+                    game1,
+                    effectiveSchedule,
+                    results,
+                    winner1
+                ) || game.team1,
+
+            team2:
+                outcome(
+                    game.category,
+                    game2,
+                    effectiveSchedule,
+                    results,
+                    winner2
+                ) || game.team2
+        };
+    });
+}
+
+function pct(value) {
+    return value
+        .toFixed(3)
+        .replace(/^0/, '');
+}
