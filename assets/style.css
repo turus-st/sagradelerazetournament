@@ -29,7 +29,7 @@
     width: 6%;
 }
 .card-social{
-    background:linear-gradient(to top right, #7b3113, #f5dcdc);border:1px solid var(--l);border-radius:15px;padding:18px;margin-bottom:16px;box-shadow:0 5px 18px #16253a0b;
+    background:linear-gradient(to top right, #ffffff, #f5dcdc);border:1px solid var(--l);border-radius:15px;padding:18px;margin-bottom:16px;box-shadow:0 5px 18px #16253a0b;
 }
 .logo-social{
     width: 32px; vertical-align: middle; margin-right: 8px;
