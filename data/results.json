@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-08-08T13:48:27.176Z",
+  "updatedAt": "2026-08-08T13:49:11.929Z",
   "games": {
     "U12:1": {
       "status": "scheduled",
@@ -546,7 +546,7 @@
         "team": "",
         "notes": ""
       },
-      "updatedAt": "2026-08-08T13:48:27.176Z"
+      "updatedAt": "2026-08-08T13:49:11.929Z"
     },
     "U10:7": {
       "status": "completed",
@@ -1382,12 +1382,12 @@
     }
   },
   "tqb": {
-    "U10:A:DUCKS": null,
+    "U10:A:DUCKS": -0.5,
     "U10:A:DRAGONS S. GIORGIO": null,
     "U10:A:VIENNA HURRICANES": 1,
     "U10:A:TIGERS": null,
     "U10:A:LONDON ARCHERS": 0,
-    "U12:A:DUCKS": -0.5,
+    "U12:A:DUCKS": null,
     "U12:A:ERD INDIANS HUNGARY": null,
     "U12:A:DIVING DUCKS": null,
     "U12:A:LONDON MONARCHS": null,
