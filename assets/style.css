@@ -28,3 +28,4 @@
 .col-pct {
     width: 6%;
 }
+.card-social{background:#fff;border:1px solid var(--l);border-radius:15px;padding:18px;margin-bottom:16px;box-shadow:0 5px 18px #16253a0b}
