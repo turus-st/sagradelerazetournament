@@ -116,8 +116,8 @@
     "time": "09:00-10:10",
     "field": "RONCHI",
     "phase": "3RD-4TH FINAL",
-    "team1": "5th",
-    "team2": "6th",
+    "team1": "3rd",
+    "team2": "4th",
     "group": "F"
   },
   {
@@ -127,8 +127,8 @@
     "time": "10:30-11:40",
     "field": "RONCHI",
     "phase": "1ST-2ND FINAL",
-    "team1": "3rd",
-    "team2": "4th",
+    "team1": "1st",
+    "team2": "2nd",
     "group": "F"
   },
   {
@@ -479,8 +479,8 @@
     "time": "10:50-12:20",
     "field": "STARANZANO",
     "phase": "7TH-8TH FINAL",
-    "team1": "5th A",
-    "team2": "5th B",
+    "team1": "4th A",
+    "team2": "4th B",
     "group": "F"
   },
   {
@@ -490,8 +490,8 @@
     "time": "12:40-14:10",
     "field": "STARANZANO",
     "phase": "3RD-4TH FINAL",
-    "team1": "4th A",
-    "team2": "4th B",
+    "team1": "2nd A",
+    "team2": "2nd B",
     "group": "F"
   },
   {
@@ -501,8 +501,8 @@
     "time": "09:00-10:30",
     "field": "CERVIGNANO",
     "phase": "9TH-10TH FINAL",
-    "team1": "3rd A",
-    "team2": "3rd B",
+    "team1": "5th A",
+    "team2": "5th B",
     "group": "F"
   },
   {
@@ -512,8 +512,8 @@
     "time": "10:50-12:20",
     "field": "CERVIGNANO",
     "phase": "5TH-6TH FINAL",
-    "team1": "2nd A",
-    "team2": "2nd B",
+    "team1": "3rd A",
+    "team2": "3rd B",
     "group": "F"
   },
   {
