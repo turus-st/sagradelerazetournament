@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-08-09T16:06:06.245Z",
+  "updatedAt": "2026-08-09T16:08:52.969Z",
   "games": {
     "U12:1": {
       "status": "scheduled",
@@ -481,7 +481,7 @@
         "team": "",
         "notes": ""
       },
-      "updatedAt": "2026-08-09T16:06:06.245Z"
+      "updatedAt": "2026-08-09T16:08:52.969Z"
     },
     "U10:2": {
       "status": "scheduled",
@@ -1382,7 +1382,7 @@
     }
   },
   "tqb": {
-    "U10:A:DUCKS": 1,
+    "U10:A:DUCKS": null,
     "U10:A:DRAGONS S. GIORGIO": null,
     "U10:A:VIENNA HURRICANES": null,
     "U10:A:TIGERS": null,
@@ -1402,7 +1402,7 @@
     "U15:A:VIENNA HURRICANES": null,
     "U15:A:A-TEAM": null,
     "U15:A:DUCKS": null,
-    "U15:A:RONCHI NBP": 1,
+    "U15:A:RONCHI NBP": null,
     "U15:A:HROSI BRNO": null,
     "U15:B:TIGERS": null,
     "U15:B:ERD GIANTS": null,
@@ -1418,6 +1418,6 @@
     "U18:B:JUNIOR PARMA": null,
     "U18:B:HEIDENHEIM RED": null,
     "U18:B:TIGERS CERVIGNANO": null,
-    "U18:A:ACADEMIX HUNGARY": 1
+    "U18:A:ACADEMIX HUNGARY": null
   }
 }
