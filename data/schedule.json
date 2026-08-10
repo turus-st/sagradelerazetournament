@@ -981,17 +981,6 @@
   {
     "category": "U18",
     "date": "2026-08-21",
-    "game": "16",
-    "time": "17:00-18:40",
-    "field": "REDIPUGLIA",
-    "phase": "QUALIFICATION",
-    "team1": "STARANZANO DUCKS",
-    "team2": "HEIDENHEIM BLU",
-    "group": "A"
-  },
-  {
-    "category": "U18",
-    "date": "2026-08-21",
     "game": "13",
     "time": "13:00-14:40",
     "field": "CERVIGNANO",
@@ -1020,6 +1009,17 @@
     "phase": "QUALIFICATION",
     "team1": "SAN LORENZO",
     "team2": "ACADEMIX HUNGARY",
+    "group": "A"
+  },
+  {
+    "category": "U18",
+    "date": "2026-08-21",
+    "game": "16",
+    "time": "17:00-18:40",
+    "field": "REDIPUGLIA",
+    "phase": "QUALIFICATION",
+    "team1": "STARANZANO DUCKS",
+    "team2": "HEIDENHEIM BLU",
     "group": "A"
   },
   {
