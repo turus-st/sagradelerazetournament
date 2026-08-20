@@ -1,8 +1,21 @@
 {
   "version": 2,
-  "updatedAt": "2026-08-20T08:52:55.396Z",
+  "updatedAt": "2026-08-20T08:55:07.817Z",
   "games": {
     "U12:1": {
+      "status": "completed",
+      "score1": 14,
+      "score2": 4,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": "2026-08-20T08:54:17.805Z"
+    },
+    "U12:2": {
       "status": "live",
       "score1": null,
       "score2": null,
@@ -13,20 +26,7 @@
         "team": "",
         "notes": ""
       },
-      "updatedAt": "2026-08-20T06:05:58.170Z"
-    },
-    "U12:2": {
-      "status": "scheduled",
-      "score1": null,
-      "score2": null,
-      "pitchers": [],
-      "batters": [],
-      "mvp": {
-        "name": "",
-        "team": "",
-        "notes": ""
-      },
-      "updatedAt": "2026-08-07T15:45:25.365Z"
+      "updatedAt": "2026-08-20T08:55:07.817Z"
     },
     "U12:3": {
       "status": "scheduled",
@@ -471,6 +471,19 @@
       "updatedAt": null
     },
     "U10:1": {
+      "status": "completed",
+      "score1": 12,
+      "score2": 3,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": "2026-08-20T08:54:40.678Z"
+    },
+    "U10:2": {
       "status": "live",
       "score1": null,
       "score2": null,
@@ -481,20 +494,7 @@
         "team": "",
         "notes": ""
       },
-      "updatedAt": "2026-08-20T08:52:25.623Z"
-    },
-    "U10:2": {
-      "status": "scheduled",
-      "score1": null,
-      "score2": null,
-      "pitchers": [],
-      "batters": [],
-      "mvp": {
-        "name": "",
-        "team": "",
-        "notes": ""
-      },
-      "updatedAt": "2026-08-09T15:45:43.642Z"
+      "updatedAt": "2026-08-20T08:54:58.434Z"
     },
     "U10:3": {
       "status": "scheduled",
@@ -507,7 +507,7 @@
         "team": "",
         "notes": ""
       },
-      "updatedAt": "2026-08-09T15:45:50.137Z"
+      "updatedAt": "2026-08-20T08:54:44.326Z"
     },
     "U10:4": {
       "status": "scheduled",
@@ -650,7 +650,7 @@
         "team": "",
         "notes": ""
       },
-      "updatedAt": "2026-08-20T08:52:55.396Z"
+      "updatedAt": "2026-08-20T08:53:58.785Z"
     },
     "U15:3": {
       "status": "scheduled",
