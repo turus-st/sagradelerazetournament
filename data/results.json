@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-08-20T08:55:07.817Z",
+  "updatedAt": "2026-08-20T13:17:05.875Z",
   "games": {
     "U12:1": {
       "status": "completed",
@@ -42,7 +42,7 @@
       "updatedAt": null
     },
     "U12:4": {
-      "status": "scheduled",
+      "status": "live",
       "score1": null,
       "score2": null,
       "pitchers": [],
@@ -52,7 +52,7 @@
         "team": "",
         "notes": ""
       },
-      "updatedAt": null
+      "updatedAt": "2026-08-20T13:15:09.561Z"
     },
     "U12:5": {
       "status": "scheduled",
@@ -481,7 +481,7 @@
         "team": "",
         "notes": ""
       },
-      "updatedAt": "2026-08-20T08:54:40.678Z"
+      "updatedAt": "2026-08-20T13:14:50.719Z"
     },
     "U10:2": {
       "status": "live",
@@ -637,9 +637,35 @@
         "team": "",
         "notes": ""
       },
-      "updatedAt": "2026-08-20T08:52:49.492Z"
+      "updatedAt": "2026-08-20T13:17:05.875Z"
     },
     "U15:2": {
+      "status": "completed",
+      "score1": 6,
+      "score2": 15,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": "2026-08-20T13:17:01.653Z"
+    },
+    "U15:3": {
+      "status": "completed",
+      "score1": 17,
+      "score2": 3,
+      "pitchers": [],
+      "batters": [],
+      "mvp": {
+        "name": "",
+        "team": "",
+        "notes": ""
+      },
+      "updatedAt": "2026-08-20T13:16:35.852Z"
+    },
+    "U15:4": {
       "status": "live",
       "score1": null,
       "score2": null,
@@ -650,33 +676,7 @@
         "team": "",
         "notes": ""
       },
-      "updatedAt": "2026-08-20T08:53:58.785Z"
-    },
-    "U15:3": {
-      "status": "scheduled",
-      "score1": null,
-      "score2": null,
-      "pitchers": [],
-      "batters": [],
-      "mvp": {
-        "name": "",
-        "team": "",
-        "notes": ""
-      },
-      "updatedAt": null
-    },
-    "U15:4": {
-      "status": "scheduled",
-      "score1": null,
-      "score2": null,
-      "pitchers": [],
-      "batters": [],
-      "mvp": {
-        "name": "",
-        "team": "",
-        "notes": ""
-      },
-      "updatedAt": null
+      "updatedAt": "2026-08-20T13:15:16.189Z"
     },
     "U15:5": {
       "status": "scheduled",
