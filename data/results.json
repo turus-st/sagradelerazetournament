@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-08-20T15:20:45.802Z",
+  "updatedAt": "2026-08-20T15:55:52.488Z",
   "games": {
     "U12:1": {
       "status": "completed",
@@ -481,7 +481,7 @@
         "team": "",
         "notes": ""
       },
-      "updatedAt": "2026-08-20T15:07:31.544Z"
+      "updatedAt": "2026-08-20T15:55:35.328Z"
     },
     "U10:2": {
       "status": "completed",
@@ -680,8 +680,8 @@
     },
     "U15:5": {
       "status": "live",
-      "score1": null,
-      "score2": null,
+      "score1": 4,
+      "score2": 0,
       "pitchers": [],
       "batters": [],
       "mvp": {
@@ -689,7 +689,7 @@
         "team": "",
         "notes": ""
       },
-      "updatedAt": "2026-08-20T15:19:36.404Z"
+      "updatedAt": "2026-08-20T15:55:52.488Z"
     },
     "U15:6": {
       "status": "completed",
