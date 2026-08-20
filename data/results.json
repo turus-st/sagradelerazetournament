@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-08-20T13:41:16.726Z",
+  "updatedAt": "2026-08-20T13:42:55.425Z",
   "games": {
     "U12:1": {
       "status": "completed",
@@ -494,7 +494,7 @@
         "team": "",
         "notes": ""
       },
-      "updatedAt": "2026-08-20T13:41:16.726Z"
+      "updatedAt": "2026-08-20T13:41:57.658Z"
     },
     "U10:3": {
       "status": "scheduled",
@@ -1004,7 +1004,7 @@
       "updatedAt": null
     },
     "U18:1": {
-      "status": "scheduled",
+      "status": "live",
       "score1": null,
       "score2": null,
       "pitchers": [],
@@ -1014,10 +1014,10 @@
         "team": "",
         "notes": ""
       },
-      "updatedAt": null
+      "updatedAt": "2026-08-20T13:42:04.627Z"
     },
     "U18:2": {
-      "status": "scheduled",
+      "status": "live",
       "score1": null,
       "score2": null,
       "pitchers": [],
@@ -1027,10 +1027,10 @@
         "team": "",
         "notes": ""
       },
-      "updatedAt": null
+      "updatedAt": "2026-08-20T13:42:10.088Z"
     },
     "U18:3": {
-      "status": "scheduled",
+      "status": "live",
       "score1": null,
       "score2": null,
       "pitchers": [],
@@ -1040,10 +1040,10 @@
         "team": "",
         "notes": ""
       },
-      "updatedAt": null
+      "updatedAt": "2026-08-20T13:42:43.568Z"
     },
     "U18:4": {
-      "status": "scheduled",
+      "status": "live",
       "score1": null,
       "score2": null,
       "pitchers": [],
@@ -1053,10 +1053,10 @@
         "team": "",
         "notes": ""
       },
-      "updatedAt": null
+      "updatedAt": "2026-08-20T13:42:51.752Z"
     },
     "U18:5": {
-      "status": "scheduled",
+      "status": "live",
       "score1": null,
       "score2": null,
       "pitchers": [],
@@ -1066,7 +1066,7 @@
         "team": "",
         "notes": ""
       },
-      "updatedAt": null
+      "updatedAt": "2026-08-20T13:42:55.425Z"
     },
     "U18:6": {
       "status": "scheduled",
