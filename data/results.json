@@ -1,9 +1,9 @@
 {
   "version": 2,
-  "updatedAt": "2026-08-09T16:08:52.969Z",
+  "updatedAt": "2026-08-20T06:06:06.248Z",
   "games": {
     "U12:1": {
-      "status": "scheduled",
+      "status": "live",
       "score1": null,
       "score2": null,
       "pitchers": [],
@@ -13,7 +13,7 @@
         "team": "",
         "notes": ""
       },
-      "updatedAt": "2026-08-07T15:45:00.929Z"
+      "updatedAt": "2026-08-20T06:05:58.170Z"
     },
     "U12:2": {
       "status": "scheduled",
@@ -471,7 +471,7 @@
       "updatedAt": null
     },
     "U10:1": {
-      "status": "scheduled",
+      "status": "live",
       "score1": null,
       "score2": null,
       "pitchers": [],
@@ -481,7 +481,7 @@
         "team": "",
         "notes": ""
       },
-      "updatedAt": "2026-08-09T16:08:52.969Z"
+      "updatedAt": "2026-08-20T06:05:49.016Z"
     },
     "U10:2": {
       "status": "scheduled",
@@ -627,7 +627,7 @@
       "updatedAt": "2026-08-09T15:46:39.637Z"
     },
     "U15:1": {
-      "status": "scheduled",
+      "status": "live",
       "score1": null,
       "score2": null,
       "pitchers": [],
@@ -637,7 +637,7 @@
         "team": "",
         "notes": ""
       },
-      "updatedAt": null
+      "updatedAt": "2026-08-20T06:06:06.248Z"
     },
     "U15:2": {
       "status": "scheduled",
@@ -1418,6 +1418,7 @@
     "U18:B:JUNIOR PARMA": null,
     "U18:B:HEIDENHEIM RED": null,
     "U18:B:TIGERS CERVIGNANO": null,
-    "U18:A:ACADEMIX HUNGARY": null
+    "U18:A:ACADEMIX HUNGARY": null,
+    "U12:A:UKRAINE": null
   }
 }
