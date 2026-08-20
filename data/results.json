@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-08-20T17:55:20.320Z",
+  "updatedAt": "2026-08-20T18:01:28.774Z",
   "games": {
     "U12:1": {
       "status": "completed",
@@ -52,7 +52,7 @@
         "team": "",
         "notes": ""
       },
-      "updatedAt": "2026-08-20T17:55:20.320Z"
+      "updatedAt": "2026-08-20T18:01:25.387Z"
     },
     "U12:5": {
       "status": "live",
@@ -497,7 +497,7 @@
       "updatedAt": "2026-08-20T13:46:55.889Z"
     },
     "U10:3": {
-      "status": "scheduled",
+      "status": "live",
       "score1": null,
       "score2": null,
       "pitchers": [],
@@ -507,7 +507,7 @@
         "team": "",
         "notes": ""
       },
-      "updatedAt": "2026-08-20T08:54:44.326Z"
+      "updatedAt": "2026-08-20T18:01:28.774Z"
     },
     "U10:4": {
       "status": "scheduled",
