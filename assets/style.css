@@ -50,3 +50,7 @@
 .logo-social{
     width: 32px; vertical-align: middle; margin-right: 8px;
 }
+.status.cancelled {
+    background: #f4e3e5;
+    color: #912b34;
+}

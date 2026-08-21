@@ -58,7 +58,8 @@ function badge(status) {
     const labels = {
         scheduled: 'Scheduled',
         live: 'In progress',
-        completed: 'Completed'
+        completed: 'Completed',
+        cancelled: 'Cancelled'
     };
 
     return `
