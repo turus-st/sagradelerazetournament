@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-08-22T19:18:14.459Z",
+  "updatedAt": "2026-08-22T19:26:00.164Z",
   "games": {
     "U12:1": {
       "status": "completed",
@@ -390,7 +390,7 @@
         "team": "",
         "notes": ""
       },
-      "updatedAt": "2026-08-22T19:18:14.459Z"
+      "updatedAt": "2026-08-22T19:26:00.164Z"
     },
     "U12:31": {
       "status": "scheduled",
