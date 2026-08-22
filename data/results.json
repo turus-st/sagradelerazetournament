@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-08-21T20:41:49.891Z",
+  "updatedAt": "2026-08-22T05:45:42.377Z",
   "games": {
     "U12:1": {
       "status": "completed",
@@ -481,7 +481,7 @@
         "team": "",
         "notes": ""
       },
-      "updatedAt": "2026-08-21T20:41:38.382Z"
+      "updatedAt": "2026-08-22T05:44:45.568Z"
     },
     "U10:2": {
       "status": "completed",
@@ -887,7 +887,7 @@
       "updatedAt": null
     },
     "U15:21": {
-      "status": "scheduled",
+      "status": "cancelled",
       "score1": null,
       "score2": null,
       "pitchers": [],
@@ -897,10 +897,10 @@
         "team": "",
         "notes": ""
       },
-      "updatedAt": null
+      "updatedAt": "2026-08-22T05:45:38.293Z"
     },
     "U15:22": {
-      "status": "scheduled",
+      "status": "cancelled",
       "score1": null,
       "score2": null,
       "pitchers": [],
@@ -910,7 +910,7 @@
         "team": "",
         "notes": ""
       },
-      "updatedAt": null
+      "updatedAt": "2026-08-22T05:45:42.377Z"
     },
     "U15:23": {
       "status": "scheduled",
@@ -1264,7 +1264,7 @@
       "updatedAt": null
     },
     "U18:21": {
-      "status": "scheduled",
+      "status": "cancelled",
       "score1": null,
       "score2": null,
       "pitchers": [],
@@ -1274,10 +1274,10 @@
         "team": "",
         "notes": ""
       },
-      "updatedAt": null
+      "updatedAt": "2026-08-22T05:44:52.916Z"
     },
     "U18:22": {
-      "status": "scheduled",
+      "status": "cancelled",
       "score1": null,
       "score2": null,
       "pitchers": [],
@@ -1287,10 +1287,10 @@
         "team": "",
         "notes": ""
       },
-      "updatedAt": null
+      "updatedAt": "2026-08-22T05:45:04.347Z"
     },
     "U18:23": {
-      "status": "scheduled",
+      "status": "cancelled",
       "score1": null,
       "score2": null,
       "pitchers": [],
@@ -1300,10 +1300,10 @@
         "team": "",
         "notes": ""
       },
-      "updatedAt": null
+      "updatedAt": "2026-08-22T05:45:10.161Z"
     },
     "U18:24": {
-      "status": "scheduled",
+      "status": "cancelled",
       "score1": null,
       "score2": null,
       "pitchers": [],
@@ -1313,7 +1313,7 @@
         "team": "",
         "notes": ""
       },
-      "updatedAt": null
+      "updatedAt": "2026-08-22T05:45:31.450Z"
     },
     "U18:25": {
       "status": "scheduled",
