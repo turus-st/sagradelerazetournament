@@ -403,14 +403,13 @@ function effective(schedule, results, config) {
         };
     });
 }
+
 function finalStandings(
     category,
     schedule,
     results
 ) {
-
     const data = [];
-
     const add = (game, winner) => {
 
         data.push(
@@ -424,16 +423,13 @@ function finalStandings(
         );
 
     };
-
     switch(category) {
-
         case 'U10':
             add(12, true);
             add(12, false);
             add(11, true);
             add(11, false);
             break;
-
         case 'U12':
             add(36, true);
             add(36, false);
@@ -448,7 +444,6 @@ function finalStandings(
             add(31, true);
             add(31, false);
             break;
-
         case 'U15':
             add(29, true);
             add(29, false);
@@ -461,7 +456,6 @@ function finalStandings(
             add(25, true);
             add(25, false);
             break;
-
         case 'U18':
             add(29, true);
             add(29, false);
@@ -476,6 +470,25 @@ function finalStandings(
             break;
     }
     return data;
+}
+
+function hasCompletedFinal(
+    category,
+    schedule,
+    results
+) {
+    return schedule.some(g => {
+        if (g.category !== category) {
+            return false;
+        }
+        if (!g.group || g.group !== 'F') {
+            return false;
+        }
+        return (
+            gd(g, results).status ===
+            'completed'
+        );
+    });
 }
 
 function pct(value) {
