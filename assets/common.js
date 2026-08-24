@@ -101,6 +101,7 @@ function table(category, group, schedule, results, config) {
             ra: 0,
             diff: 0,
             pct: 0,
+            pt:0,
             tqb:
                 results.tqb?.[
                     `${category}:${group}:${team}`
@@ -155,7 +156,7 @@ function table(category, group, schedule, results, config) {
 
     Object.values(statistics).forEach(team => {
         team.diff = team.rf - team.ra;
-
+        team.pt=team.w * 3 + team.t;
         team.pct = team.g
             ? (team.w + team.t * 0.5) / team.g
             : 0;
