@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Final Standings</title>
-    assets/style.css
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 <div id="siteHeader"></div>
@@ -30,11 +30,9 @@ loadData().then(
             'U18'
         ];
         const medals = {
-
             1: '🥇',
             2: '🥈',
             3: '🥉'
-
         };
         finalStandings.innerHTML =
             categories.map(cat => {
