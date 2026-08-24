@@ -48,8 +48,8 @@ loadData().then(
                     <table>
                         <thead>
                             <tr>
-                                <th>Pos.</th>
-                                <th>Team</th>
+                                <th class="col-num">#</th>
+                                <th class="col-team">Team</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -60,7 +60,7 @@ loadData().then(
                                         index
                                     ) => `
                                     <tr>
-                                        <td>
+                                        <td class="rank">
                                             ${
                                                 medals[
                                                     index+1
