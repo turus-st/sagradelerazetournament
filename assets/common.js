@@ -407,8 +407,10 @@ function effective(schedule, results, config) {
 function finalStandings(
     category,
     schedule,
-    results
+    results,
+    config
 ) {
+    schedule = effective(schedule,results,config);
     const data = [];
     const add = (game, winner) => {
 
