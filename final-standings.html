@@ -8,10 +8,7 @@
 <body>
 <div id="siteHeader"></div>
 <main class="wrap">
-    <section class="card">
-        <h1>🏆 Final Standings</h1>
         <div id="finalStandingsContainer"></div>
-    </section>
 </main>
 <div id="siteFooter"></div>
 <script src="assets/common.js"></script><script src="assets/layout.js"></script>
@@ -44,7 +41,7 @@ loadData().then(
                     );
                 return `
                 <section class="card">
-                    <h2>${cat}</h2>
+                    <h2>🏆 ${cat} - Final Standing</h2>
                     <table>
                         <thead>
                             <tr>
@@ -60,7 +57,7 @@ loadData().then(
                                         index
                                     ) => `
                                     <tr>
-                                        <td class="rank">
+                                        <td class="rank"><b>
                                             ${
                                                 medals[
                                                     index+1
@@ -70,14 +67,14 @@ loadData().then(
                                                     index+1
                                                 ) + '°'
                                             }
-                                        </td>
-                                        <td>
+                                        </b></td>
+                                        <td><b>
                                             ${
                                                 team
                                                     ||
                                                 ''
                                             }
-                                        </td>
+                                        </b></td>
                                     </tr>
                                 `
                                 ).join('')
