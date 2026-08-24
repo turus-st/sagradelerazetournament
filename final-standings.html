@@ -10,7 +10,7 @@
 <main class="wrap">
     <section class="card">
         <h1>🏆 Final Standings</h1>
-        <div id="finalStandings"></div>
+        <div id="finalStandingsContainer"></div>
     </section>
 </main>
 <div id="siteFooter"></div>
@@ -33,7 +33,7 @@ loadData().then(
             2: '🥈',
             3: '🥉'
         };
-        finalStandings.innerHTML =
+        document.getElementById('finalStandingsContainer').innerHTML.innerHTML =
             categories.map(cat => {
                 const ranking =
                     finalStandings(
