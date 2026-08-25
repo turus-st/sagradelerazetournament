@@ -2,6 +2,9 @@
 <title>Awards</title><link rel="stylesheet" href="assets/style.css"></head>
 <body>
     <div id="siteHeader"></div>
+    <main class="wrap">
+        <div id="finalStandingsContainer"></div>
+    </main>
     <main class="wrap"><section class="card"><h1>🏅 Individual Awards</h1></section>
         <section class="card"><h2>Pitching</h2><div id="p" class="table"></div></section>
         <section class="card"><h2>Batting</h2><div id="b" class="table"></div></section>
@@ -10,4 +13,78 @@
     <div id="siteFooter"></div>
 <script src="assets/common.js"></script><script src="assets/layout.js"></script>
 <script>loadData().then(({schedule,results})=>{let P={},B={},M=[];schedule.forEach(g=>{let r=gd(g,results);r.pitchers.forEach(x=>{let k=g.category+'|'+x.team+'|'+x.name;P[k]??={category:g.category,...x,games:0,rl:0,runsAllowed:0,pgl:0};P[k].games++;P[k].rl+=+x.rl||0;P[k].runsAllowed+=+x.runsAllowed||0;P[k].pgl+=+x.pgl||0});r.batters.forEach(x=>{let k=g.category+'|'+x.team+'|'+x.name;B[k]??={category:g.category,...x,games:0,h:0,tb:0,ab:0,rbi:0};B[k].games++;['h','tb','ab','rbi'].forEach(f=>B[k][f]+=+x[f]||0)});if(r.mvp?.name)M.push({category:g.category,game:g.game,...r.mvp})});p.innerHTML=`<table><tr><th>Cat.</th><th>Name</th><th>Team</th><th>G</th><th>IP</th><th>RA</th><th>PGL</th></tr>${Object.values(P).map(x=>`<tr><td>${x.category}</td><td>${esc(x.name)}</td><td>${esc(x.team)}</td><td>${x.games}</td><td>${x.rl}</td><td>${x.runsAllowed}</td><td>${x.pgl}</td></tr>`).join('')}</table>`;b.innerHTML=`<table><tr><th>Cat.</th><th>Name</th><th>Team</th><th>G</th><th>AB</th><th>H</th><th>TB</th><th>RBI</th></tr>${Object.values(B).map(x=>`<tr><td>${x.category}</td><td>${esc(x.name)}</td><td>${esc(x.team)}</td><td>${x.games}</td><td>${x.ab}</td><td>${x.h}</td><td>${x.tb}</td><td>${x.rbi}</td></tr>`).join('')}</table>`;m.innerHTML=M.length?M.map(x=>`<p><b>${x.category} #${x.game}: ${esc(x.name)}</b> - ${esc(x.team)}<br>${esc(x.notes)}</p>`).join(''):'<p>No MVPs published.</p>'})</script>
+<script>loadData().then(
+    ({
+        schedule,
+        results,
+        config
+    }) => {
+        const categories = [
+            'U10',
+            'U12',
+            'U15',
+            'U18'
+        ];
+        const medals = {
+            1: '🥇',
+            2: '🥈',
+            3: '🥉'
+        };
+        document.getElementById('finalStandingsContainer').innerHTML =
+            categories.map(cat => {
+                const ranking =
+                    finalStandings(
+                        cat,
+                        schedule,
+                        results,
+                        config
+                    );
+                return `
+                <section class="card">
+                    <h2>🏆 ${cat} - Final Standing</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="col-num"<b>>#</b></th>
+                                <th class="col-team">Team</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${
+                                ranking.map(
+                                    (
+                                        team,
+                                        index
+                                    ) => `
+                                    <tr>
+                                        <td class="rank"><b>
+                                            ${
+                                                medals[
+                                                    index+1
+                                                ]
+                                                ||
+                                                (
+                                                    index+1
+                                                ) + '°'
+                                            }
+                                        </b></td>
+                                        <td><b>
+                                            ${
+                                                team
+                                                    ||
+                                                ''
+                                            }
+                                        </b></td>
+                                    </tr>
+                                `
+                                ).join('')
+                            }
+                        </tbody>
+                    </table>
+                </section>
+                `;
+            }).join('');
+    }
+);
+</script>
 </body></html>
