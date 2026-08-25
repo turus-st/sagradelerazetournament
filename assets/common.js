@@ -432,6 +432,14 @@ function finalStandings(
             add(12, false);
             add(11, true);
             add(11, false);
+            const standings = table(
+                'U10',
+                'A',
+                schedule,
+                results,
+                config
+            );
+            data.push(standings[4]?.team|| null);
             break;
         case 'U12':
             add(36, true);
@@ -472,16 +480,6 @@ function finalStandings(
             add(25, false);
             break;
     }
-    const standings = table(
-                'U10',
-                'A',
-                schedule,
-                results,
-                config
-            );
-
-            data.push(standings[4]?.team || null);
-            
     return data;
 }
 
