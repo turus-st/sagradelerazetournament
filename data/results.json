@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-08-23T15:45:09.740Z",
+  "updatedAt": "2026-08-25T01:13:44.708Z",
   "games": {
     "U12:1": {
       "status": "completed",
@@ -481,7 +481,7 @@
         "team": "",
         "notes": ""
       },
-      "updatedAt": "2026-08-23T15:40:21.486Z"
+      "updatedAt": "2026-08-25T01:05:10.073Z"
     },
     "U10:2": {
       "status": "completed",
@@ -994,14 +994,31 @@
       "status": "completed",
       "score1": 2,
       "score2": 11,
-      "pitchers": [],
-      "batters": [],
+      "pitchers": [
+        {
+          "name": "Labut",
+          "team": "Fun & Play",
+          "rl": 0,
+          "runsAllowed": 0,
+          "pgl": 0
+        }
+      ],
+      "batters": [
+        {
+          "name": "Libor Sadilek",
+          "team": "Hrosi Brno",
+          "h": 0,
+          "tb": 0,
+          "ab": 0,
+          "rbi": 0
+        }
+      ],
       "mvp": {
-        "name": "",
-        "team": "",
-        "notes": ""
+        "name": "Editar",
+        "team": "Hrosi Brno",
+        "notes": "2 HR, pitcher"
       },
-      "updatedAt": "2026-08-23T12:51:16.709Z"
+      "updatedAt": "2026-08-25T01:13:44.708Z"
     },
     "U18:1": {
       "status": "completed",
@@ -1371,14 +1388,31 @@
       "status": "completed",
       "score1": 1,
       "score2": 8,
-      "pitchers": [],
-      "batters": [],
+      "pitchers": [
+        {
+          "name": "Leonardo Girotto",
+          "team": "Tigers Cervignano",
+          "rl": 0,
+          "runsAllowed": 0,
+          "pgl": 0
+        }
+      ],
+      "batters": [
+        {
+          "name": "Christian Falcomer",
+          "team": "Tigers Cervignano",
+          "h": 0,
+          "tb": 0,
+          "ab": 0,
+          "rbi": 0
+        }
+      ],
       "mvp": {
-        "name": "",
-        "team": "",
+        "name": "Thomas Cechet",
+        "team": "Ducks Staranzano",
         "notes": ""
       },
-      "updatedAt": "2026-08-23T13:53:03.203Z"
+      "updatedAt": "2026-08-25T01:07:49.127Z"
     }
   },
   "tqb": {
