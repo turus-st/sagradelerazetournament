@@ -3,9 +3,11 @@
 <body>
     <div id="siteHeader"></div>
     <main class="wrap">
+        <section class="card"><h1>🏆 Team Awards</h1></section>
         <div id="finalStandingsContainer"></div>
     </main>
-    <main class="wrap"><section class="card"><h1>🏅 Individual Awards</h1></section>
+    <main class="wrap">
+        <section class="card"><h1>🏅 Individual Awards</h1></section>
         <section class="card"><h2>Pitching</h2><div id="p" class="table"></div></section>
         <section class="card"><h2>Batting</h2><div id="b" class="table"></div></section>
         <section class="card"><h2>MVPs</h2><div id="m"></div></section>
@@ -26,9 +28,9 @@
             'U18'
         ];
         const medals = {
-            1: '🥇',
-            2: '🥈',
-            3: '🥉'
+            1: '🏆 Champion',
+            2: '🥈 Runner-up',
+            3: '🥉 Third Place'
         };
         document.getElementById('finalStandingsContainer').innerHTML =
             categories.map(cat => {
