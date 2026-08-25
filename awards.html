@@ -18,8 +18,8 @@
 r.pitchers.forEach(x=>{let k=g.category+'|'+x.team+'|'+x.name;P[k]??={category:g.category,...x,games:0,rl:0,runsAllowed:0,pgl:0};P[k].games++;P[k].rl+=+x.rl||0;P[k].runsAllowed+=+x.runsAllowed||0;P[k].pgl+=+x.pgl||0});
 r.batters.forEach(x=>{let k=g.category+'|'+x.team+'|'+x.name;B[k]??={category:g.category,...x,games:0,h:0,tb:0,ab:0,rbi:0};B[k].games++;['h','tb','ab','rbi'].forEach(f=>B[k][f]+=+x[f]||0)});
 if(r.mvp?.name)M.push({category:g.category,game:g.game,...r.mvp})});
-p.innerHTML=`<table><tr><th>Cat.</th><th>Name</th><th>Team</th><th>IP</th><th>ER</th></tr>${Object.values(P).map(x=>`<tr><td>${x.category}</td><td>${esc(x.name)}</td><td>${esc(x.team)}</td><td>${x.rl}</td><td>${x.pgl}</td></tr>`).join('')}</table>`;
-b.innerHTML=`<table><tr><th>Cat.</th><th>Name</th><th>Team</th><th>AB</th><th>H</th><th>TB</th></tr>${Object.values(B).map(x=>`<tr><td>${x.category}</td><td>${esc(x.name)}</td><td>${esc(x.team)}</td><td>${x.ab}</td><td>${x.h}</td><td>${x.tb}</td></tr>`).join('')}</table>`;
+p.innerHTML=`<table><tr><th>Cat.</th><th>Name</th><th>Team</th><th>IP</th><th>ER</th><th>ERA</th></tr>${Object.values(P).map(x=>`<tr><td>${x.category}</td><td>${esc(x.name)}</td><td>${esc(x.team)}</td><td>${x.rl}</td><td>${x.pgl}</td></tr>`).join('')}</table>`;
+b.innerHTML=`<table><tr><th>Cat.</th><th>Name</th><th>Team</th><th>AB</th><th>H</th><th>TB</th><th>AVG</th><th>SLG</th></tr>${Object.values(B).map(x=>`<tr><td>${x.category}</td><td>${esc(x.name)}</td><td>${esc(x.team)}</td><td>${x.ab}</td><td>${x.h}</td><td>${x.tb}</td></tr>`).join('')}</table>`;
 m.innerHTML=`<table><tr><th>Cat.</th><th>Name</th><th>Team</th><th>Notes</th></tr>${Object.values(M).map(x=>`<tr><td>${x.category}</td><td>${esc(x.name)}</td><td>${esc(x.team)}</td><td>${esc(x.notes || '')}</td></tr>`).join('')}</table>`;});
 </script>
 <script>loadData().then(
