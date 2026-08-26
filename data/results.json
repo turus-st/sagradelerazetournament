@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-08-26T08:46:29.056Z",
+  "updatedAt": "2026-08-26T09:32:45.921Z",
   "games": {
     "U12:1": {
       "status": "completed",
@@ -1018,7 +1018,7 @@
         "team": "Hrosi Brno",
         "notes": "2 HR, pitcher"
       },
-      "updatedAt": "2026-08-26T08:46:29.056Z"
+      "updatedAt": "2026-08-26T09:32:23.701Z"
     },
     "U18:1": {
       "status": "completed",
@@ -1404,7 +1404,7 @@
           "h": 0,
           "tb": 0,
           "ab": 0,
-          "rbi": 0
+          "rbi": 0.625
         }
       ],
       "mvp": {
@@ -1412,7 +1412,7 @@
         "team": "Ducks Staranzano",
         "notes": ""
       },
-      "updatedAt": "2026-08-25T01:07:49.127Z"
+      "updatedAt": "2026-08-26T09:32:45.921Z"
     }
   },
   "tqb": {
